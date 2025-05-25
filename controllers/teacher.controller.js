@@ -9,7 +9,7 @@ import {createGradeFormulasForAssignment, deleteGradeFormulasForAssignment} from
 import { updateSubjectGradesFromFormula } from './studentGrade.controller.js';
 import dotenv from 'dotenv';
 
-dotenv.config();
+// dotenv.config();
 
 const JWT_SECRET = process.env.JWT_SECRET;
 

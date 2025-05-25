@@ -1,5 +1,5 @@
 import express from 'express';
-import dotenv from 'dotenv';
+// import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import studentRoutes from './routes/student.routes.js';
 import teacherRoutes from './routes/teacher.routes.js';
@@ -15,7 +15,7 @@ import studentGradeRoutes from './routes/studentGrade.routes.js';
 import cors from 'cors';
 
 
-dotenv.config();
+// dotenv.config();
 
 const app = express();
 app.use(cors({
@@ -28,6 +28,7 @@ app.use(express.json());
 
 
 // Connect to MongoDB
+console.log(process.env.MONGODB_URI)
 mongoose.connect(process.env.MONGODB_URI)
 .then(() => console.log('MongoDB connected'))
 .catch(err => console.error('MongoDB connection error:', err));

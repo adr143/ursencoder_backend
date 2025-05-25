@@ -3,6 +3,6 @@ import bcrypt from 'bcryptjs';
 import dotenv from 'dotenv';
 import Teacher from '../models/teacher.model.js';
 
-dotenv.config();
+// dotenv.config();
 
 console.log(process.env.JWT_SECRET);
