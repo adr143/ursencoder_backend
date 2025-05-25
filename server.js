@@ -22,7 +22,7 @@ console.log("OK")
 
 const app = express();
 app.use(cors({
-  origin: '*', // Replace with your frontend URL
+  origin: 'https://urs-grade-encoder.vercel.app/', // Replace with your frontend URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true,
