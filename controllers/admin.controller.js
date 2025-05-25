@@ -5,7 +5,7 @@ import Teacher from '../models/teacher.model.js';
 import TeacherRequest from '../models/teacherRequest.model.js';
 import dotenv from 'dotenv';
 
-// dotenv.config();
+dotenv.config();
 
 const JWT_SECRET = process.env.JWT_SECRET;
 
