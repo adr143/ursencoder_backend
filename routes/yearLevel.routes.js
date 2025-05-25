@@ -1,5 +1,5 @@
 import express from 'express';
-import { createYearLevel, getAllYearLevels, getYearLevelById, deleteYearLevel, assignSectionsToYearLevel } from '../controllers/yearlevel.controller.js';
+import { createYearLevel, getAllYearLevels, getYearLevelById, deleteYearLevel, assignSectionsToYearLevel } from '../controllers/yearLevel.controller.js';
 
 const router = express.Router();
 
