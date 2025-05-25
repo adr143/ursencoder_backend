@@ -17,6 +17,9 @@ import cors from 'cors';
 
 dotenv.config();
 
+console.log(process.env.MONGODB_URI)
+console.log("OK")
+
 const app = express();
 app.use(cors({
   origin: '*', // Replace with your frontend URL
